@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -42,6 +41,7 @@ class SessionForm extends React.Component {
     render() {
         return (
             <form className="session-form" onSubmit={this.handleSubmit}>
+                {this.renderErrors()}
                 <div className="session-form__input-fields">
                     <input 
                         value={this.state.username}

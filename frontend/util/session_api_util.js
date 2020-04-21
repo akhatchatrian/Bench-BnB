@@ -19,7 +19,7 @@ export const APIUtil = {
     logout: () => (
         $.ajax({
             method: "DELETE",
-            url: `api/session`
+            url: `/api/session`
         })
     )
 }

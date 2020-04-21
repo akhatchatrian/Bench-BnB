@@ -46,6 +46,22 @@ header {
     }
 }
 
+.greeting-welcome {
+    margin-right: 3rem;
+    padding-top: .9rem;
+
+    h3 {
+        font-size: 1.6rem;
+        color: white;
+    }
+
+    a {
+        float: right;
+    }
+}
+
+
+
 .bkg-container {
     padding-top: 3rem;
     height: 95vh;
@@ -58,4 +74,17 @@ header {
     width: 100%;
     height: 95%;
     text-align: center;
+}
+
+.errors {
+    float: left;
+    font-size: 2rem;
+    list-style: none;
+
+    li {
+        text-align: left;
+        color: rgb(255, 0, 0);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
 }
