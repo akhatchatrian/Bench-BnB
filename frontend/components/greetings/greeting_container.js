@@ -1,5 +1,6 @@
 import { logout } from "../../actions/session_actions";
 import { connect } from "react-redux";
+import Greeting from "./greeting"
 
 const mstp = ({ session, entities: { users } }) => ({
     currentUser: users[session.id]

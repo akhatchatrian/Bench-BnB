@@ -1,0 +1,47 @@
+.btn {
+    transition: all .2s;
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 300;
+        padding: .6rem 1.3rem;
+        display: inline-block;
+        transition: all .2s;
+        font-size: 1.6rem;
+        border-radius: 6px;
+        border: solid thin white;
+        color: white;
+        
+    }
+
+    &:hover {
+        background-color: rgb(154, 172, 167);
+        transform: scale(1.2);
+        border: solid thin rgb(154, 172, 167);;
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 1rem 2rem;
+    }
+
+    &__submit {
+        cursor: pointer;
+        float: left;
+        color: white;
+        border: none;
+        font-size: 1.6rem;
+        padding: .6rem 1.3rem;
+        background-color: transparent;
+        border-bottom: solid thin white;
+        border-top: solid thin white;
+        border-radius: 6px;
+
+
+        &:hover {
+            opacity: 1;
+            background-color: rgb(235, 173, 122);
+            border: none;
+            transform: translateY(-.5rem);
+            box-shadow: rgba(0, 0, 0, 0.22) 0px 1rem 2rem;
+        }
+    }
+}

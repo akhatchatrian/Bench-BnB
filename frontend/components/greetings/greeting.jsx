@@ -5,27 +5,23 @@ const Greeting = ({ currentUser, logout }) => {
 
     const sessionLinks = () => {
         return (
-            <div className="section-greeting__links">
-                <Link className="btn__primary" to="/login">Login</Link>
-                <Link className="btn__primary" to="/signup">Sign up</Link>
+            <div className="greeting-links">
+                <Link className="btn" to="/login">Login</Link>
+                <Link className="btn" to="/signup">Sign-up</Link>
             </div>
         )
     }
 
     const currentUserGreeting = () => {
         return (
-            <div className="section-greeting__welcome">
+            <div className="greeting-welcome">
                 <h3>Welcome {currentUser.username}!</h3>
-                <button className="btn__primary" onClick={logout}>Sign out</button>
+                <button className="btn" onClick={logout}>Sign out</button>
             </div>
         )
     }
 
-    return (
-        <section className="section-greeting">
-            {currentUser ? currentUserGreeting() : sessionLinks()}
-        </section>            
-    )
+    return currentUser ? currentUserGreeting() : sessionLinks()
 }
 
 export default Greeting; 
