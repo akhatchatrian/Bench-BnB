@@ -24,13 +24,13 @@ class BenchIndex extends React.Component {
         }
 
         return (
-            <section className ="section-benches">
-                <h1 className="benches-title">Benches</h1>
+            <div className ="benches">
+                <h1 className="benches__title">Benches</h1>
                 <br/>
-                <div bench="benchs-container">
+                <div bench="benches__container">
                     {this.assignBenches()}
                 </div>
-            </section>
+            </div>
         );
     };
 }

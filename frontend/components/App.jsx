@@ -6,7 +6,7 @@ import { AuthRoute } from "../util/route_util";
 import GreetingContainer from "./greetings/greeting_container";
 import LoginFormContainer from "./session/login_form_container";
 import SignupFormContainer from "./session/signup_form_container";
-import BenchIndexContainer from "./benches/bench_index_container";
+import SearchContainer from "./benches/search_container";
 
 
 const App = () => (
@@ -18,7 +18,7 @@ const App = () => (
         <div className="body-container">
             <AuthRoute exact path="/login" component={LoginFormContainer}/>
             <AuthRoute exact path="/signup" component={SignupFormContainer}/>
-            <Route exact path ="/" component={BenchIndexContainer} />
+            <Route exact path ="/" component={SearchContainer} />
         </div>
     </div>
 );
